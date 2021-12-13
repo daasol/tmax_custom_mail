@@ -25,6 +25,7 @@ mail 서버에 콜을 날릴 뿐, 응답을 받지 않기 때문에 전송 완�
 
 ## Project 하위 디렉토리
 src 
+
  └─config
    └─Config.java        // 메일 제목/바디, 메일 sender/receiver, 메일 서버 
    
