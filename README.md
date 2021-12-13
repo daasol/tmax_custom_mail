@@ -27,15 +27,19 @@ mail 서버에 콜을 날릴 뿐, 응답을 받지 않기 때문에 전송 완�
 src 
 
  └─config
+ 
    └─Config.java        // 메일 제목/바디, 메일 sender/receiver, 메일 서버 
    
  └─mail
+ 
    └─CustomMail.java    // Sender() 
    
  └─main
+ 
    └─main.java.         // main 
    
  └─lib 
+ 
    └─mail-1.4.7.jar.    // mail 전송을 위한 라이브러리 
    
  
