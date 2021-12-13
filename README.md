@@ -1,5 +1,6 @@
 # tmax_custom_mail
 
+<<<<<<< HEAD
 ## custom mail jar 파일 생성
 1. Project > Export > Java.Runnable JAR file 생성
 
@@ -42,3 +43,6 @@ lib
   
   
   
+=======
+### 조직도 연동 및 사이트별 알림 사용을 위한 Custom Mail 
+>>>>>>> refs/remotes/main/master
