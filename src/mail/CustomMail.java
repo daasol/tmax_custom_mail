@@ -22,15 +22,11 @@ public class CustomMail {
 	/** Loggner **/
 	private final static Logger logger = Logger.getLogger("");
 	
-	public static void Sender() {
-		if(SendMail()){
-			logger.info("[CustomMail.Sender] [Sender] Start to send mail ");
-		}else logger.warning("[CustomMail.Sender] [Sender] Mail Transfer Failed ");
-	}
 	
 	/** Sender **/
-	/** Sender **/
 	public static boolean SendMail() {
+		
+		logger.info("[CustomMail.SendMail] [Sender] Start to send mail ");
 			
 		/**Sender Properties **/	
 		Properties p = new Properties();  
@@ -73,6 +69,8 @@ public class CustomMail {
 			try{
 				trns.connect();
 				trns.sendMessage(msg, InternetAddress.parse(Config.RECEIVER));
+				
+				logger.info("[CustomMail.SendMail] Message sent "+sender);
 				return true;
 				
 			} catch(javax.mail.internet.AddressException ae) {
@@ -84,13 +82,16 @@ public class CustomMail {
 		    	 me.printStackTrace();
 		    	 return false;
 		    	 
-		     }
+		     }			
+		
 		}catch (AddressException addr_e) {
 			addr_e.printStackTrace();
+			logger.warning("[CustomMail.SendMail] [SendMail] Mail Transfer Failed ");
 			return false;
 			
 		}catch (MessagingException msg_e) {
 			msg_e.printStackTrace();
+			logger.warning("[CustomMail.SendMail] [SendMail] Mail Transfer Failed ");
 			return false;
 		}
 		
