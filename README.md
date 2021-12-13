@@ -24,7 +24,7 @@ mail 서버에 콜을 날릴 뿐, 응답을 받지 않기 때문에 전송 완�
 
 
 ## Project 하위 디렉토리
-'''bash
+
 src
     ├── config
     │   └── Config.java
