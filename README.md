@@ -31,5 +31,5 @@ src
 └─mail  
     └─CustomMail.java  
 └─main  
-    └─main.java  
+    └─main.java  
 
